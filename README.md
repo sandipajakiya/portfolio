@@ -1,68 +1,85 @@
-﻿# node-authentication
+# Node Authentication
+
 This repository provides a Node.js application demonstrating user authentication using Express.js and MongoDB. It includes features such as user registration, login, and session management.
 
-Features
-User Registration: Allows new users to create an account.
-User Login: Authenticates users with a username and password.
-Session Management: Maintains user sessions across requests.
-Prerequisites
+## Features
+
+- **User Registration**: Allows new users to create an account.
+- **User Login**: Authenticates users with a username and password.
+- **Session Management**: Maintains user sessions across requests.
+
+## Prerequisites
+
 Ensure you have the following installed:
 
-Node.js (version 14 or higher)
-MongoDB (ensure it's running on your local machine or provide a connection string)
-Installation
-Clone the Repository:
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [MongoDB](https://www.mongodb.com/) (ensure it's running on your local machine or provide a connection string)
 
-bash
-Copy
-Edit
-git clone https://github.com/sandipajakiya/node-authentication.git
-cd node-authentication
-Install Dependencies:
+## Installation
 
-bash
-Copy
-Edit
-npm install
-Configure Environment Variables:
+1. **Clone the Repository**:
 
-Create a .env file in the root directory and add the following variables:
+   ```bash
+   git clone https://github.com/sandipajakiya/node-authentication.git
+   cd node-authentication
+   ```
 
-env
-Copy
-Edit
-PORT=3000
-MONGODB_URI=mongodb://localhost:27017/your-database-name
-SESSION_SECRET=your-session-secret
-PORT: The port number on which the application will run.
-MONGODB_URI: Your MongoDB connection string.
-SESSION_SECRET: A secret key for session management.
-Usage
-Start the Application:
+2. **Install Dependencies**:
 
-bash
-Copy
-Edit
-npm start
-Access the Application:
+   ```bash
+   npm install
+   ```
 
-Open your browser and navigate to http://localhost:3000.
+3. **Configure Environment Variables**:
 
-Project Structure
-controllers/: Contains the logic for handling user requests.
-middleware/: Includes middleware functions for request processing.
-models/: Defines the Mongoose schemas and models.
-routes/: Contains the route definitions.
-services/: Provides additional services like email handling (if applicable).
-views/: Holds the EJS templates for rendering web pages.
-Dependencies
-Express.js: Web framework for Node.js.
-Mongoose: ODM for MongoDB.
-EJS: Templating engine.
-Express-Session: Session middleware for Express.
-Contributing
+   Create a `.env` file in the root directory and add the following variables:
+
+   ```env
+   PORT=3000
+   MONGODB_URI=mongodb://localhost:27017/your-database-name
+   SESSION_SECRET=your-session-secret
+   ```
+
+   - `PORT`: The port number on which the application will run.
+   - `MONGODB_URI`: Your MongoDB connection string.
+   - `SESSION_SECRET`: A secret key for session management.
+
+## Usage
+
+1. **Start the Application**:
+
+   ```bash
+   npm start
+   ```
+
+2. **Access the Application**:
+
+   Open your browser and navigate to `http://localhost:3000`.
+
+## Project Structure
+
+- `controllers/`: Contains the logic for handling user requests.
+- `middleware/`: Includes middleware functions for request processing.
+- `models/`: Defines the Mongoose schemas and models.
+- `routes/`: Contains the route definitions.
+- `services/`: Provides additional services like email handling (if applicable).
+- `views/`: Holds the EJS templates for rendering web pages.
+
+## Dependencies
+
+- [Express.js](https://expressjs.com/): Web framework for Node.js.
+- [Mongoose](https://mongoosejs.com/): ODM for MongoDB.
+- [EJS](https://ejs.co/): Templating engine.
+- [Express-Session](https://github.com/expressjs/session): Session middleware for Express.
+
+## Contributing
+
 Contributions are welcome! Please fork the repository and submit a pull request with your proposed changes.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+## License
 
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+*Note: This README is based on the typical structure and features of Node.js authentication projects. For specific details, please refer to the actual code and implementation in this repository.* 
